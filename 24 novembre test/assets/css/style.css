@@ -1,0 +1,267 @@
+/* impostazione generali */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Spectral:wght@400;600&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+p,
+li,
+button {
+  font-family: "Roboto", sans-serif;
+}
+h1 {
+  font-family: "Spectral", serif;
+  font-size: 5em;
+}
+section svg {
+  width: 40% !important;
+}
+/* impostazioni header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 10em;
+  padding: 1em 8em;
+  background-color: #ffc017;
+  border-bottom: 0.6px solid black;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  transition: background-color 0.5s ease-in;
+}
+
+#nav ul {
+  display: flex;
+  gap: 1.5em;
+  align-items: center;
+}
+#nav ul li {
+  list-style-type: none;
+  font-size: 0.75em;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+#nav ul li:nth-of-type(5) {
+  color: white;
+  background-color: black;
+  padding: 0.7em 1em;
+  border-radius: 30px;
+  transition: background-color 0.5s ease-in;
+}
+
+/* impostazioni section */
+
+section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffc017;
+}
+
+#sectionText {
+  padding: 5em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#sectionText p {
+  margin-block: 1.5em;
+  font-weight: 300;
+  font-size: 1.3em;
+}
+
+#sectionText button {
+  color: white;
+  background-color: black;
+  padding: 0.7em 2em;
+  border-radius: 30px;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+/* articles section */
+
+#articleSection {
+  margin: 4em 9em;
+}
+#trendingsec {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+#trendingsec p {
+  font-size: 0.7em;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+#articlesCont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 3em;
+  column-gap: 0.5em;
+}
+.articles {
+  display: flex;
+  align-items: flex-start;
+  width: 20em;
+}
+.imgandname {
+  display: flex;
+  align-items: center;
+}
+.imgandname img {
+  width: 1em;
+  border-radius: 5px;
+  margin-right: 0.5em;
+}
+.imgandname .imground {
+  width: 1em;
+  border-radius: 50%;
+  margin-right: 0.5em;
+}
+
+.imgandname p {
+  font-size: 0.7em;
+  font-weight: 500;
+}
+
+.artName {
+  margin-block: 1em;
+  font-size: 0.9em;
+  font-weight: 550;
+}
+.artName p {
+  overflow-wrap: break-word;
+}
+.date {
+  font-size: 0.7em;
+  color: gray;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.date img {
+  width: 1.5em;
+}
+
+.date p:nth-of-type(2) {
+  padding: 0.5em;
+  background-color: rgba(219, 219, 219, 0.564);
+  border-radius: 40px;
+}
+
+.numDisplay {
+  color: rgba(219, 219, 219, 0.739);
+  font-weight: 900;
+  font-size: 1.6em;
+  margin: 0.5em;
+  margin-top: 0;
+}
+/* ---- */
+
+#articleSection2 {
+  border-top: 1px solid rgb(212, 212, 212);
+  padding-block: 3.5em;
+  padding-inline: 6em;
+}
+
+.lower {
+  display: flex;
+  justify-content: space-between;
+}
+#articleSection2 .artName {
+  margin-block: 1em;
+  font-size: 1.2em;
+  font-weight: 550;
+}
+
+.artDesc p {
+  font-size: 0.9em;
+  color: gray;
+  font-weight: 300;
+  margin-bottom: 0.6em;
+}
+#articleSection2 .articles {
+}
+.artSec2Cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 2em;
+}
+.artSec2Cont .artInfo {
+  width: 42em;
+}
+.artSec2Cont .bigimg {
+  width: 26%;
+  height: 26%;
+}
+#articleSection2 .articles {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+
+/* aside */
+
+#articleSection2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+aside {
+  display: flex;
+  flex-direction: column;
+  width: 20em;
+  position: sticky;
+  top: 90px;
+}
+
+aside h6 {
+  text-transform: uppercase;
+  font-size: 0.75em;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+
+aside ul li {
+  list-style-type: none;
+  font-size: 0.7em;
+  font-weight: 300;
+  color: rgb(133, 133, 133);
+}
+
+#aside1 ul {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 0.5em;
+  row-gap: 0.3em;
+}
+
+#aside1 ul li {
+  border: 1px solid rgb(210, 210, 210);
+  padding: 0.6em;
+  border-radius: 2px;
+  font-size: 0.68em;
+}
+
+#aside2 {
+  margin-top: 2em;
+  padding-top: 2em;
+  border-top: 1px solid rgb(221, 221, 221);
+}
+#aside2 ul {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 1em;
+  row-gap: 0.3em;
+}
+#aside2 ul li {
+}
